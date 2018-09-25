@@ -1,0 +1,17 @@
+<div class="ingr" style="text-align: center">
+    <h1>Ingredienser</h1>
+    <div class="headerrow">
+            <div class="col5h">Namn</div>        
+            <div class="col5h">KCal</div>
+            <div class="col5h">Fett</div>
+            <div class="col5h">Protein</div>
+            <div class="col5h">Kolhydrater</div>  
+    </div>
+	<div class="row" ng-repeat="ingredient in ingredients">
+        <div class="col5">{{ingredient.ingredientName}}</div>        
+        <div class="col5">{{ingredient.kCal}}</div>
+        <div class="col5">{{ingredient.fat}}</div>
+        <div class="col5">{{ingredient.protein}}</div>
+        <div class="col5">{{ingredient.carb}}</div> 
+	</div>
+</div>

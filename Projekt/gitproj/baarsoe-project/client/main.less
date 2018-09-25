@@ -1,0 +1,142 @@
+@blue: #387EFF;
+@blue-hover: #1C65EB;
+
+p {
+  font-weight: bold;
+}
+
+.link {
+  color: @blue;
+  cursor: pointer;
+  //margin-bottom: 10px;
+  display: block;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 150%;
+ }
+
+.html, body
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+span.text-blue
+{
+  color: @blue;
+}
+
+button:focus
+{
+  outline: 0;
+}
+
+.navbar .container
+{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
+}
+.navbar > .container .navbar-brand-centered,
+.navbar > .container-fluid .navbar-brand-centered
+{
+  margin-left: -80px;
+}
+.navbar
+{
+  border-bottom: 0;
+}
+.navbar-default .navbar-nav > li:not(.active) > a:not(.unresponsive):hover
+{
+  background-color: #0E0E0E;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus
+{
+  background-color: #3873FF;
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a:hover
+{
+  background-color: #1C65EB;
+}
+.nav.navbar-nav.navbar-right > li > .unresponsive:hover
+{
+  color: #777777;
+  cursor: default;
+}
+
+div.light-blue-background
+{
+  background-color: #C5E7FF;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.ingr {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+  width:100%;
+}
+.col5h {
+  width: 19.5%;
+  display: inline-block;
+  font-weight: bold;
+}
+.col5 {
+  width: 19.5%;
+  display: inline-block;
+  font-weight: normal;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}
+[class*="col-"] {
+  width:33.3333%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.newMeal {
+  margin-bottom: 20px;
+}

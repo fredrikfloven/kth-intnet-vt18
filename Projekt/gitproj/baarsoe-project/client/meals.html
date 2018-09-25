@@ -1,0 +1,14 @@
+<div class="container" style="text-align: center">
+	<h1>Måltider</h1>
+	<div style="font-weight: bold;font-size:150%">
+		<div class="col-md-4">Äten vid</div>
+		<div class="col-md-4">Namn på måltid</div>
+		<div class="col-md-4">Typ av måltid</div>
+	</div>
+	<div class="link" ng-repeat="meal in meals" ng-click="redirect('meals/' + meal.id)">
+		<div class="col-md-4">{{meal.eatenAt}}</div>
+		<div class="col-md-4">{{meal.mealName}}</div>
+		<div class="col-md-4">{{meal.mealType}}</div>
+	</div>
+	<button class="btn btn-lg btn-primary btn-block" ng-click="redirect('newMeal')">LÄGG UPP NY MÅLTID</button>
+</div>

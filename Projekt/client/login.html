@@ -1,0 +1,32 @@
+<div class="text-box col-md-4 col-md-offset-2" style="text-align: center;margin-left: 33.33%;">
+    <h1 class="h3 mb-3 font-weight-normal">Logga In</h1>
+    <form class = "form-signin" ng-submit = "done()">
+        <label for="username" class="sr-only">Användarnamn</label>
+        <input type="text" ng-model="username" id="loginInputField" 
+        class="form-control" placeholder="Användarnamn" required autofocus>
+        
+        <label for="password" class="sr-only">Lösenord</label>
+        <input type="password" id="loginPasswordInputField" ng-model="password" 
+        class="form-control" placeholder="Lösenord" required>
+
+        <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="createOrLogin" ng-model="createOrLogin" value="login" autocomplete="off" checked> Logga In
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="createOrLogin" ng-model="createOrLogin" value="create" autocomplete="off"> Skapa
+            </label>
+        </div> -->
+        <div style="margin-bottom: 20px">
+                <input class="radio-inline" name="createOrLogin" type="radio" 
+                ng-model="createOrLogin" value="login" required> Logga In
+                
+                <input class="radio-inline" name="createOrLogin" type="radio" 
+                ng-model="createOrLogin" value="create" required> Skapa
+        </div>
+         
+
+        <input class="btn btn-lg btn-primary btn-block"  
+        type="submit" id="LoginOKBtn" value="OK">
+    </form>
+</div>
