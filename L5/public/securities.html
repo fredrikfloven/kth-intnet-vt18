@@ -1,0 +1,8 @@
+<div class="text-box col-md-4 col-md-offset-4" style="text-align: center">
+	<!-- View för att visa alla securities -->
+	<h1>Aktiva aktier</h1>
+	<div  class="link" ng-repeat="security in securities" ng-click="redirect('securities/' + security.id)">
+		{{security.name}}
+	</div>
+	<button class="btn btn-default" ng-click="redirect('newSecurity')">LÄGG UPP</button>
+</div>

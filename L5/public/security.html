@@ -1,0 +1,24 @@
+<div  style="text-align: center">
+	<!-- View för att visa alla orders och orderhistorik för en specifik security -->
+	<h1>{{security.name}}</h1>
+	<div id="orders">
+		<h2>Orders</h2>
+		<div ng-repeat="order in orders">
+			Typ:{{order.type}}
+			Pris:{{order.price}}
+			Antal:{{order.amount}}
+		</div>
+		<button class="btn btn-default" ng-click="redirect('securities/' + security.id + '/newOrder')">NY ORDER</button>
+		
+	</div>
+	<div id="trades">
+		<h2>Trades</h2>		
+		<div ng-repeat="trade in trades">
+			Pris:{{trade.price}}
+			Antal:{{trade.amount}}
+			Tid:{{trade.dt}}
+			Köpare:{{trade.buyer}}
+			Säljare:{{trade.seller}}
+		</div>
+	</div>
+</div>

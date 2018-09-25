@@ -1,0 +1,9 @@
+
+Create key store with cert.
+keytool -genkey -keyalg "RSA" -storepass rootroot -validity 365 -alias localhost -keystore test3.jks -ext san=dns:localhost
+
+Export cert.
+keytool -export -alias localhost -storepass rootroot -file server3.cer -keystore test3.jks
+
+List certs.
+keytool -list -storepass rootroot -keystore test3.jks

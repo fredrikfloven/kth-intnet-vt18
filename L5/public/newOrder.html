@@ -1,0 +1,18 @@
+<div class="text-box col-md-4 col-md-offset-4" style="text-align: center">
+	<h1>Lägg upp ny order</h1>
+	<h2>{{security.name}}</h2>
+	<form ng-submit="done()">
+			<p>Typ</p>
+			<input class="radio-inline" name="type" type="radio" ng-model="type" value="buy" required> Köp
+			<input class="radio-inline" name="type" type="radio" ng-model="type" value="sell" required> Sälj
+			<br>
+			<br>
+			<p>Pris</p>
+			<input class="form-control" type="number" ng-model="price" required>
+			<br>
+			<p>Antal</p>
+			<input class="form-control" type="number" ng-model="amount" required>
+			<br>
+			<input class="btn btn-default" type="submit" value="Ok">
+	</form>
+</div>
