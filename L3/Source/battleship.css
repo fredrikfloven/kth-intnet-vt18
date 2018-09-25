@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(83, 83, 83);
+}
+
+#stats {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 100px;
+    font-weight: bold;
+    background-color: rgb(81, 170, 81);
+}
+
+#curtain {
+    background-color: black;
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#board1 {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+#board2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+#board1 .cell {
+    background-color: rgb(75, 112, 192);
+}
+
+#board2 .cell {
+    background-color: rgb(197, 53, 53);
+}
+
+.row {
+    height: 50px;
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: blanchedalmond 1px solid;
+    overflow: hidden;
+}
+
+.cell.clickable:hover {
+    background-color: orangered !important; 
+    cursor: pointer;
+}
